@@ -3,29 +3,104 @@
     <head>
         <meta charset="utf-8">
         <title>Starfleet Idle</title>
+        <link rel="stylesheet" href="main.css"></link>
     </head>
     <body>
-        <p id="credits">0 Credits</p>
-        <p id="iron">0 Iron</p>
-        <p id="nanofiber">0 Nanofiber</p>
-        <p id="antimatter">0 Antimatter</p>
-        <p id="hydrogen">0 Hydrogen</p>
-        <p id="research">0 Research Points</p>
+        <div class="row">
+            <div class="column">
+                <table>
+                    <tr>
+                        <th>Ship Class</th>
+                        <th>Number of Ships</th>
+                    </tr>
+                    <tr>
+                        <td>Corvettes</td>
+                        <td id="corvettes">1</td>
+                    </tr>
+                    <tr>
+                        <td>Frigates</td>
+                        <td id="frigates">0</td>
+                    </tr>
+                    <tr>
+                        <td>Destroyers</td>
+                        <td id="destroyers">0</td>
+                    </tr>
+                    <tr>
+                        <td>Cruisers</td>
+                        <td id="cruisers">0</td>
+                    </tr>
+                    <tr>
+                        <td>Battleships</td>
+                        <td id="battleships">0</td>
+                    </tr>
+                    <tr>
+                        <td>Dreadnoughts</td>
+                        <td id="dreadnoughts">0</td>
+                    </tr>
+                    <tr>
+                        <td>Motherships</td>
+                        <td id="motherships">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column">
+                <table>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Number of Resource</td>
+                    </tr>
+                    <tr>
+                        <td>Credits</td>
+                        <td id="credits">0</td>
+                    </tr>
+                    <tr>
+                        <td>Iron</td>
+                        <td id="iron">0</td>
+                    </tr>
+                    <tr>
+                        <td>Nanofiber</td>
+                        <td id="nanofiber">0</td>
+                    </tr>
+                    <tr>
+                        <td>Antimatter</td>
+                        <td id="antimatter">0</td>
+                    </tr>
+                    <tr>
+                        <td>Hydrogen</td>
+                        <td id="hydrogen">0</td>
+                    </tr>
+                    <tr>
+                        <td>Research Points</td>
+                        <td id="research">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
         <div id="navigateButtons">
             <button onclick="tab('fleetMenu')">Fleet</button>
             <button onclick="tab('productionMenu')">Production</button>
             <button onclick="tab('researchMenu')">Research</button>
+            <button onclick="saveGame()">Save Game</button>
         </div>
 
         <div id="fleetMenu">
-            <button onclick="mineGold()">Mine Gold</button>
+            <br>
         </div>
 
         <div id="productionMenu">
-            <button onclick="buyGoldPerClick()" id="perClickUpgrade">Upgrade Pickaxe (Currently Level 1) Cost: 10 Gold</button>
+            <br>
+            <button>Buy Iron Foundry</button>
+            <button>Buy Nanofiber Centrifuge</button>
+            <button>Buy Antimatter Smasher</button>
+            <button>Buy Hydrogen Extractor</button>
         </div>
 
         <div id="researchMenu">
+            <br>
+            <button>Buy Researcher</button>
+            <button>Buy Expert</button>
+            <button>Buy A.I. Unit</button>
         </div>
 
         <script src="main.js" charset="utf-8" type="text/javascript"></script>

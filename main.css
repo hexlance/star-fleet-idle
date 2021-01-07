@@ -1,0 +1,29 @@
+table, th , td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+th, td {
+    padding: 5px;
+}
+
+.row {
+    margin-left:-5px;
+    margin-right:-5px;
+}
+    
+.column {
+    float: left;
+    width: 10%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
