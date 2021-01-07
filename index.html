@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Starfleet Idle</title>
+    </head>
+    <body>
+        <p id="credits">0 Credits</p>
+        <p id="iron">0 Iron</p>
+        <p id="nanofiber">0 Nanofiber</p>
+        <p id="antimatter">0 Antimatter</p>
+        <p id="hydrogen">0 Hydrogen</p>
+        <p id="research">0 Research Points</p>
+        <div id="navigateButtons">
+            <button onclick="tab('fleetMenu')">Fleet</button>
+            <button onclick="tab('productionMenu')">Production</button>
+            <button onclick="tab('researchMenu')">Research</button>
+        </div>
+
+        <div id="fleetMenu">
+            <button onclick="mineGold()">Mine Gold</button>
+        </div>
+
+        <div id="productionMenu">
+            <button onclick="buyGoldPerClick()" id="perClickUpgrade">Upgrade Pickaxe (Currently Level 1) Cost: 10 Gold</button>
+        </div>
+
+        <div id="researchMenu">
+        </div>
+
+        <script src="main.js" charset="utf-8" type="text/javascript"></script>
+    </body>
+</html>
